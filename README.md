@@ -1,6 +1,7 @@
 # AnimeAmigos Social Media App - Connect with Anime Lovers!
 Welcome to AnimeAmigoes App! Come connect with a vibrant community of anime lovers!
-![animeAmigos logo]()
+![animeAmigologo](https://user-images.githubusercontent.com/113262558/224212110-3107732e-25f7-4123-b8fe-b7b1a9100e26.png)
+
 
 ## ## Table of Contents
 
