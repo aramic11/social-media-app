@@ -1,0 +1,12 @@
+use('socialMediaApp');
+
+db.user.insertOne({
+  "username": "money",
+  "password": "honey",
+  "email": "bos@gmail.com",
+  "following": {
+    "username": "Bunny"
+  }
+})
+
+db.user.find({})
