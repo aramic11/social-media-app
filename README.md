@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# AnimeAmigos Social Media App - Connect with Anime Lovers!
+Welcome to AnimeAmigoes App! Come connect with a vibrant community of anime lovers!
+![animeAmigologo](https://user-images.githubusercontent.com/113262558/224212110-3107732e-25f7-4123-b8fe-b7b1a9100e26.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## ## Table of Contents
 
-In the project directory, you can run:
+- [Description](#description)
+- [Technologies](#technologies)
+- [Contributors](#contributors)
+- [Questions & Collaboration](#questions&collaboration)
+- [Link to Deployed Site](#deployedsite)
+- [Screenshots](#screenshots)
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+AnimeAmigos is a social media app that allows users to connect with other anime fans. Users can sign up or log in to their account and search for friends or discover new people with similar interests. They can then post content, like and comment on other posts, and follow other users. The platform also allows users to personalize their profiles with images and more.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## User Story
 
-### `npm test`
+``As a user of the social media website,
+I want to be able to easily discover new anime content and connect with fellow anime enthusiasts, 
+And share my favorite anime shows, characters and experiences through posts and comments,
+And receive notifications when they other users interact with my posts ow when new anime content is shared,
+So that I can stay updated on the latest anime trends, connect with like-minded individuals
+And build a community of anime lovers.
+``
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies 
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- React
+- Redux
+- Bootstrap
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributors
+This was a collaboration between the following developers:
+- [Ahmed Ramic](https://github.com/aramic11)
+- [Silvia Olinger](https://github.com/silviaolinger)
+- [Bright Abety](https://github.com/kagebright)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Question and Collaboration
+- If you have questions or suggestions, please contact any of the above contributors.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- If you would like to contribute to this project, please fork the repository and then create a pull for your changes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Link to Deployed Site
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
