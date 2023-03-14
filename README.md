@@ -3,7 +3,7 @@ Welcome to AnimeAmigoes App! Come connect with a vibrant community of anime love
 ![animeAmigologo](https://user-images.githubusercontent.com/113262558/224212110-3107732e-25f7-4123-b8fe-b7b1a9100e26.png)
 
 
-## ## Table of Contents
+## Table of Contents
 
 - [Description](#description)
 - [Technologies](#technologies)
@@ -18,15 +18,19 @@ AnimeAmigos is a social media app that allows users to connect with other anime 
 
 ## User Story
 
-``As a user of the social media website,
+`As a user of the social media website,
 I want to be able to easily discover new anime content and connect with fellow anime enthusiasts, 
 And share my favorite anime shows, characters and experiences through posts and comments,
 And receive notifications when they other users interact with my posts ow when new anime content is shared,
 So that I can stay updated on the latest anime trends, connect with like-minded individuals
-And build a community of anime lovers.
-``
+And build a community of anime lovers.`
 
 ## Installation
+To install and run the AnimeAmigos app on your local machine, follow these steps:
+1. Clone the repository to your local machine:
+2. Install the required dependencies using npm: `npm install`
+3. Start the development server: `npm start`
+4. Open your web browser and go to `http://localhost:3001` to view the app.
 
 
 ## Technologies 
@@ -43,6 +47,7 @@ This was a collaboration between the following developers:
 - [Ahmed Ramic](https://github.com/aramic11)
 - [Silvia Olinger](https://github.com/silviaolinger)
 - [Bright Abety](https://github.com/kagebright)
+- [Stephanie Tidwell](https://github.com/stephtidwell)
 
 
 ## Question and Collaboration
@@ -53,4 +58,5 @@ This was a collaboration between the following developers:
 ## Link to Deployed Site
 
 ## Screenshots
+
 
