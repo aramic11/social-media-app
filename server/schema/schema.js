@@ -6,6 +6,7 @@ import FollowSchema from "./Follow.js";
 import LikeSchema from "./Like.js";
 import PostSchema from "./Post.js";
 import UserSchema from "./User.js";
+import MessageSchema from "./Message.js";
 
 // Define the root Query and Mutation types, which are required by Apollo Server
 const typeDefs = gql`
@@ -22,6 +23,7 @@ const typeDefs = gql`
   ${LikeSchema}
   ${PostSchema}
   ${UserSchema}
+  ${MessageSchema}
 `;
 
 export default typeDefs;
