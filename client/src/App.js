@@ -18,7 +18,7 @@ const App = () => {
         <Container>
           {/* The Navbar component is displayed on every page */}
           <Navbar />
-          
+
           {/* Define routes for each page */}
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={SignIn} />

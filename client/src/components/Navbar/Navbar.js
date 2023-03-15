@@ -4,6 +4,7 @@ import { StoreContext } from "../../store/store";
 import { useStyles, theme } from "./styles";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
+import { DonateApp } from "../../pages/DonateButton";
 
 const MenuAppBar = () => {
   const classes = useStyles();
@@ -55,6 +56,8 @@ const MenuAppBar = () => {
             <Button color="inherit" component={Link} to="/register">
               Register User
             </Button>
+
+            <DonateApp />
           </Toolbar>
         </AppBar>
       </div>
