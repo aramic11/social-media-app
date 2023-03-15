@@ -17,6 +17,7 @@ import {
   Typography,
   Collapse,
 } from "@material-ui/core";
+import { DonateApp } from "../../pages/DonateButton";
 
 const PostCard = ({
   post: {
@@ -91,6 +92,8 @@ const PostCard = ({
           <Typography variant="body2" color="textSecondary">
             {commentCount}
           </Typography>
+
+          <DonateApp />
 
           <IconButton
             className={clsx(classes.expand, {

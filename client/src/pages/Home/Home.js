@@ -47,7 +47,7 @@ const Home = () => {
             {posts.map((post) => (
               <Grid key={post.id} item xs={12} sm={6} md={4}>
                 <PostCard post={post} />
-                <DonateApp />
+                {/* <DonateApp /> */}
               </Grid>
             ))}
           </Grid>
