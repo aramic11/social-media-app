@@ -32,9 +32,9 @@ const DonateButton = ({ currency, amount }) => {
               },
               items: [
                 {
-                  name: "Cat Fundraiser",
+                  name: "Anime Fundraiser",
                   description:
-                    "All proceeds directly support Furby's care and recovery.",
+                    "All proceeds directly support anime content creator.",
                   quantity: "1",
                   unit_amount: {
                     currency_code: currency,

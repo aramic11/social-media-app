@@ -31,6 +31,7 @@ const MenuAppBar = () => {
             <Button color="inherit" onClick={context.logout}>
               Logout
             </Button>
+            <DonateApp />
           </Toolbar>
         </AppBar>
       </div>
@@ -57,7 +58,7 @@ const MenuAppBar = () => {
               Register User
             </Button>
 
-            <DonateApp />
+            <DonateApp component={Link} to="/donate" />
           </Toolbar>
         </AppBar>
       </div>

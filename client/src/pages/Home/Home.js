@@ -4,7 +4,7 @@ import GET_POSTS from "../../graphql/Post/GetPosts";
 import { useStyles, theme } from "./styles";
 import { ThemeProvider } from "@material-ui/core/styles";
 import PostCard from "../../components/PostCard/PostCard";
-import { DonateApp } from "../DonateButton";
+// import { DonateApp } from "../DonateButton";
 import {
   Grid,
   CircularProgress,
