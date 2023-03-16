@@ -3,6 +3,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from "@apollo/client";
 import { setContext } from "apollo-link-context";
+import 'bootstrap/dist/css/bootstrap.css';
+import axios from 'axios';
 
 import App from "./App";
 
