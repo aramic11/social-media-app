@@ -1,0 +1,10 @@
+h1,
+p {
+  font-family: Lato;
+}
+.hasUnread {
+  font-weight: bold;
+}
+.rce-citem-body--bottom-status span {
+  background-color: #35f !important;
+}

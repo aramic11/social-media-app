@@ -4,7 +4,10 @@ import ReactDOM from "react-dom";
 import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from "@apollo/client";
 import { setContext } from "apollo-link-context";
 
+
+
 import App from "./App";
+
 
 // Set up the HTTP link for Apollo Client to connect to the GraphQL server
 const httpLink = createHttpLink({
@@ -26,7 +29,10 @@ const authLink = setContext(() => {
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
+  
 });
+
+
 
 // Render the app with the Apollo Client provider
 ReactDOM.render(

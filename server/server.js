@@ -7,7 +7,9 @@ import resolvers from "./resolvers/resolvers.js"; // GraphQL resolvers
 import mongoose from "mongoose"; // for connecting to MongoDB
 import { MONGODB } from "./config.js"; // MongoDB connection URL
 
-const app = express(); // creating express app
+const app = express(); // creating express 
+
+
 const PORT = process.env.PORT || 3001; // setting up default port
 
 // Enabling Cross-Origin Resource Sharing (CORS) for express app

@@ -2,6 +2,7 @@
 import jwt from "jsonwebtoken"; // for generating and verifying JWT tokens
 import { SECRET_KEY } from "../config.js"; // for JWT secret key
 
+
 // Function to generate a JWT token
 const generateToken = (user) => {
   return jwt.sign(
@@ -34,6 +35,8 @@ const authUser = (context) => {
   }
   throw new Error("Authorization token must be provided"); // Throw an error if the token is not provided
 };
+
+
 
 // Export the functions
 export { generateToken, authUser };

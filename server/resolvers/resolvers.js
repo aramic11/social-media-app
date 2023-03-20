@@ -1,16 +1,17 @@
 import commentResolvers from "./Comment.js";
 import followResolvers from "./Follow.js";
 import likeResolvers from "./Like.js";
+import messageResolvers from "./Message.js";
 import postResolvers from "./Post.js";
 import userResolvers from "./User.js";
-import messageResolver from "./Message.js";
-import postMessage from "./Message.js";
+
 
 const Resolvers = {
   Query: {
     ...postResolvers.Query,
     ...userResolvers.Query,
-    ...messageResolver.Query,
+    ...messageResolvers.Query,
+  
   },
   Mutation: {
     ...commentResolvers.Mutation,
@@ -18,8 +19,7 @@ const Resolvers = {
     ...likeResolvers.Mutation,
     ...postResolvers.Mutation,
     ...userResolvers.Mutation,
-    ...messageResolver.Mutation,
-    ...postMessage.Mutation,
+    ...messageResolvers.Mutation,
   },
   Comment: {
     ...commentResolvers.Comment,
@@ -30,9 +30,9 @@ const Resolvers = {
   User: {
     ...userResolvers.User,
   },
-  Message:{
-    ...messageResolver.Message
-  }
+  Message: {
+    ...messageResolvers.Message,
+  },
 };
 
 export default Resolvers;

@@ -8,11 +8,12 @@ import Navbar from "./components/Navbar/Navbar";
 import Post from "./pages/Post/Post";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
+import Chat from  "./pages/Chat/Chat";
 import "./App.css";
-
 const App = () => {
-  return (
-    // Wrap the entire app with StoreProvider to make the store available to all components
+   return (
+
+ //Wrap the entire app with StoreProvider to make the store available to all components
     <StoreProvider>
       <Router>
         <Container>
@@ -25,9 +26,11 @@ const App = () => {
           <Route exact path="/register" component={SignUp} />
           <Route exact path="/post" component={Post} />
           <Route exact path="/posts/:postId" component={Comment} />
+          <Route exact path="/chat" component={Chat} />
         </Container>
       </Router>
-    </StoreProvider>
+    </StoreProvider>  
+
   );
 };
 

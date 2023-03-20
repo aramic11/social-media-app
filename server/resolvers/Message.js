@@ -1,25 +1,33 @@
-//import { authUser } from "../utils/auth.js";
+import Message from "../models/Message.js";
+import { authUser } from "../utils/auth.js";
 const messages = [];
-const messageResolver = {
+const messageResolvers = {
     Query: {
-        messages: () => messages,
-      },
-      Mutation:{
-        postmessage: (parent, {username,content}) => {
-            //const user = authUser(context)
-            const id= messages.length;
-           
-            messages.push({
-                //user: user.id,
-               // username: user.username,
-               username,
-                id,
-                content
-            });
-            return id;
-
+      messages: async () => {
+        try {
+          return await Message.find().sort({ dateCreated: -1 });
+        } catch (err) {
+          throw new Error(err.message);
         }
-    }
+      },
+  
+    },
+    Mutation: {
       
-}
-export default messageResolver;
+      postMessage: async ( _,{content }, context) => {
+        const user = authUser(context);
+        const newMessage = new Message ({
+          user: user.id,
+          username: user.username,
+          content,
+        
+
+        });
+        const message = await newMessage.save();
+        return message;
+      },
+    },
+    
+  };
+
+  export default messageResolvers;
