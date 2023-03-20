@@ -15,6 +15,7 @@ const DonateButton = ({ currency, amount }) => {
   return (
     <PayPalButtons
       // forceReRender={[currency, amount]}
+      timeout={10000}
       style={{ color: "black", label: "donate" }}
       fundingSource="paypal"
       createOrder={(data, actions) => {
