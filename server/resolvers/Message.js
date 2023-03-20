@@ -1,6 +1,10 @@
 import Message from "../models/Message.js";
 import { authUser } from "../utils/auth.js";
 const messages = [];
+
+
+
+
 const messageResolvers = {
     Query: {
       messages: async () => {
@@ -23,11 +27,10 @@ const messageResolvers = {
         
 
         });
-        const message = await newMessage.save();
-        return message;
+      
       },
     },
-    
+  
   };
 
   export default messageResolvers;
