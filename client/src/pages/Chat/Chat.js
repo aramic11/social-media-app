@@ -115,21 +115,7 @@ const  Chat  = ()=>{
   return(
     <Container>
     <Row>
-    <Col> 
-    <Card border='warning' >
-      <Card.Header>Contacts</Card.Header>
-      <Card.Body>
-        <Card.Title> </Card.Title>
-        <Card.Text>
-        <ListGroup>
-      <ListGroup.Item> </ListGroup.Item>
-      
-    </ListGroup>
-        </Card.Text>
-        
-      </Card.Body>
-    </Card>
-     </Col>
+    
         <Col md={{ offset: 4 }}>
         <Card border ="warning">
       <Card.Header >Live Chat</Card.Header>
