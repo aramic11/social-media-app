@@ -74,7 +74,7 @@ const Profile = () => {
   return (
     <div>
       <h2>{user.name}'s Profile</h2>
-      <img src={user.profileImageUrl} alt={`${user.name}'s profile picture`} />
+      <img src={user.profileImageUrl} alt={`${user.name}'s profile`} />
       <input type="file" onChange={handleFileChange} />
       <button onClick={handleFileUpload}>Upload Profile Picture</button>
       {errorMessage && <p>{errorMessage}</p>}
