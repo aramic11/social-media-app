@@ -37,10 +37,11 @@ app.listen(PORT, () => {
 
 // Connecting to MongoDB
 mongoose
-  .connect(MONGODB, {
+  .connect(process.env.MONGODB_URI || MONGODB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
   })
   .then(() => console.log("Connected to the db"))
   .catch((error) => console.log(error.message)); // handling MongoDB connection errors
+  
