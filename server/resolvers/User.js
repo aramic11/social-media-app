@@ -100,6 +100,7 @@ const userResolvers = {
     // Return the number of users a user is following
     followingCount: (parent) => parent.following.length,
   },
+  
 };
 
 export default userResolvers;

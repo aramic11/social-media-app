@@ -1,13 +1,17 @@
 // Importing necessary modules
 import express from "express"; // for creating express app
 import cors from "cors"; // to enable CORS
-import { ApolloServer } from "apollo-server-express"; // for connecting to ApolloServer
+import { ApolloServer} from "apollo-server-express"; // for connecting to ApolloServer
 import typeDefs from "./schema/schema.js"; // GraphQL schema
 import resolvers from "./resolvers/resolvers.js"; // GraphQL resolvers
 import mongoose from "mongoose"; // for connecting to MongoDB
 import { MONGODB } from "./config.js"; // MongoDB connection URL
+import axios from 'axios'; // making API requests
 
-const app = express(); // creating express app
+const app = express(); // creating express 
+
+
+
 const PORT = process.env.PORT || 3001; // setting up default port
 
 // Enabling Cross-Origin Resource Sharing (CORS) for express app
@@ -17,9 +21,10 @@ app.use(cors());
 const server = new ApolloServer({
   typeDefs, // GraphQL schema
   resolvers, // GraphQL resolvers
-  context: ({ req }) => ({ req }), // to access the request object in resolvers
+  context: ({ req, pubsub}) => ({ req, pubsub }), // to access the request object in resolvers
   introspection: true, // for enabling GraphQL Playground in production
   playground: true, // for enabling the GraphQL Playground
+
 });
 
 // Applying ApolloServer middleware to express app

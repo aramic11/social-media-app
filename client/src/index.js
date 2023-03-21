@@ -1,10 +1,21 @@
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from "./reportWebVitals";
 import React from "react";
 import ReactDOM from "react-dom";
-import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from "@apollo/client";
+import {
+  ApolloClient,
+  ApolloProvider,
+  createHttpLink,
+  InMemoryCache,
+} from "@apollo/client";
 import { setContext } from "apollo-link-context";
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+
 
 import App from "./App";
+// import { DonateApp } from "./pages/DonateButton";
+
 
 // Set up the HTTP link for Apollo Client to connect to the GraphQL server
 const httpLink = createHttpLink({
@@ -26,12 +37,16 @@ const authLink = setContext(() => {
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
+  
 });
+
+
 
 // Render the app with the Apollo Client provider
 ReactDOM.render(
   <ApolloProvider client={client}>
     <App />
+    {/* <DonateApp /> */}
   </ApolloProvider>,
   document.getElementById("root") // Render the app in the HTML element with the ID "root"
 );

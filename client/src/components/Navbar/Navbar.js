@@ -4,6 +4,7 @@ import { StoreContext } from "../../store/store";
 import { useStyles, theme } from "./styles";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
+import { DonateApp } from "../../pages/DonateButton";
 
 const MenuAppBar = () => {
   const classes = useStyles();
@@ -23,6 +24,10 @@ const MenuAppBar = () => {
               {context.user.username}
             </Typography>
 
+            <Button color="inherit" component={Link} to="/chat">
+              Chat
+            </Button>
+
             <Button color="inherit" component={Link} to="/post">
               Post
             </Button>
@@ -30,6 +35,7 @@ const MenuAppBar = () => {
             <Button color="inherit" onClick={context.logout}>
               Logout
             </Button>
+            <DonateApp />
           </Toolbar>
         </AppBar>
       </div>
@@ -55,6 +61,8 @@ const MenuAppBar = () => {
             <Button color="inherit" component={Link} to="/register">
               Register User
             </Button>
+
+            <DonateApp component={Link} to="/donate" />
           </Toolbar>
         </AppBar>
       </div>

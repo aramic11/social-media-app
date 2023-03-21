@@ -26,7 +26,8 @@ const postResolvers = {
     createPost: async (_, { title, content, imageUrl }, context) => {
       // Verify that the user is authenticated
       const user = authUser(context);
-      
+    
+
       // Create a new post
       const newPost = new Post({
         user: user.id,
