@@ -28,6 +28,10 @@ const postResolvers = {
     createPost: async (_, { title, content, imageUrl }, context) => {
       // Verify that the user is authenticated
       const user = authUser(context);
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 5ce571c0133feaa798e0d634cf3419e8ed3cd87f
 
       // Create a new post
       const newPost = new Post({

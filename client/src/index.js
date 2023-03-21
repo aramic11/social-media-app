@@ -8,11 +8,19 @@ import {
   InMemoryCache,
 } from "@apollo/client";
 import { setContext } from "apollo-link-context";
+<<<<<<< HEAD
 // import 'bootstrap/dist/css/bootstrap.css';
 // import axios from 'axios';
+=======
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+
+>>>>>>> 5ce571c0133feaa798e0d634cf3419e8ed3cd87f
 
 import App from "./App";
 // import { DonateApp } from "./pages/DonateButton";
+
 
 // Set up the HTTP link for Apollo Client to connect to the GraphQL server
 const httpLink = createHttpLink({
@@ -34,7 +42,10 @@ const authLink = setContext(() => {
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
+  
 });
+
+
 
 // Render the app with the Apollo Client provider
 ReactDOM.render(
