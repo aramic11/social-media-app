@@ -6,6 +6,7 @@ import typeDefs from "./schema/schema.js"; // GraphQL schema
 import resolvers from "./resolvers/resolvers.js"; // GraphQL resolvers
 import mongoose from "mongoose"; // for connecting to MongoDB
 import { MONGODB } from "./config.js"; // MongoDB connection URL
+import axios from 'axios'; // making API requests
 
 const app = express(); // creating express 
 

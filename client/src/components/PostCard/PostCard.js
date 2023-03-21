@@ -8,6 +8,8 @@ import clsx from "clsx";
 import OptionButton from "../OptionButton/OptionButton";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import PostLikeButton from "../LikeButton/PostLikeButton";
+import { DonateApp } from "../../pages/DonateButton";
+
 import {
   Card,
   CardMedia,
@@ -91,6 +93,8 @@ const PostCard = ({
           <Typography variant="body2" color="textSecondary">
             {commentCount}
           </Typography>
+
+          <DonateApp />
 
           <IconButton
             className={clsx(classes.expand, {

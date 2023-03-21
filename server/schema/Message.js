@@ -16,9 +16,7 @@ type Message {
   extend type Mutation {
     postMessage( content: String!): Message!
   }
-  type Subscription{
-   messages: [Message!]
-  }
+
    
     `;
     

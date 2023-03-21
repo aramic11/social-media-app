@@ -99,7 +99,7 @@ const  Chat  = ()=>{
     if(state.content.length > 0){
       createMessage({
 
-        context,
+        
         content: state.content
         
         
