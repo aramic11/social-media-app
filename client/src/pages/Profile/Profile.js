@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 
 const Profile = () => {
   const [user, setUser] = useState(null);
@@ -18,7 +18,7 @@ const Profile = () => {
         setLoading(false);
       } catch (error) {
         console.error(error);
-        setErrorMessage('Error fetching user data');
+        setErrorMessage("Error fetching user data");
       }
     };
 
@@ -31,7 +31,7 @@ const Profile = () => {
       setFollowing(true);
     } catch (error) {
       console.error(error);
-      setErrorMessage('Error following user');
+      setErrorMessage("Error following user");
     }
   };
 
@@ -41,7 +41,7 @@ const Profile = () => {
       setFollowing(false);
     } catch (error) {
       console.error(error);
-      setErrorMessage('Error unfollowing user');
+      setErrorMessage("Error unfollowing user");
     }
   };
 
@@ -52,14 +52,14 @@ const Profile = () => {
   const handleFileUpload = async () => {
     try {
       const formData = new FormData();
-      formData.append('profileImage', selectedFile);
+      formData.append("profileImage", selectedFile);
       await axios.post(`/api/users/${userId}/profile-image`, formData);
       // Refresh the user data
       const res = await axios.get(`/api/users/${userId}`);
       setUser(res.data);
     } catch (error) {
       console.error(error);
-      setErrorMessage('Error uploading profile picture');
+      setErrorMessage("Error uploading profile picture");
     }
   };
 
@@ -74,7 +74,7 @@ const Profile = () => {
   return (
     <div>
       <h2>{user.name}'s Profile</h2>
-      <img src={user.profileImageUrl} alt={`${user.name}'s profile picture`} />
+      <img src={user.profileImageUrl} alt={`${user.name}'s profile`} />
       <input type="file" onChange={handleFileChange} />
       <button onClick={handleFileUpload}>Upload Profile Picture</button>
       {errorMessage && <p>{errorMessage}</p>}

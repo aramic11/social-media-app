@@ -9,6 +9,7 @@ const GET_POST = gql`
       content
       dateCreated
       username
+      user
       postLikes {
         id
         username

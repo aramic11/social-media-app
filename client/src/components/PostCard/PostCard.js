@@ -32,6 +32,7 @@ const PostCard = ({
     postLikeCount,
     commentCount,
     comments,
+    user: postUser,
   },
 }) => {
   const { user } = useContext(StoreContext);
@@ -43,6 +44,7 @@ const PostCard = ({
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+  console.log(postUser);
 
   return (
     <ThemeProvider theme={theme}>
@@ -66,7 +68,15 @@ const PostCard = ({
           >
             {username}
           </Typography>
-
+          {postUser && postUser.email && (
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              className={classes.email}
+            >
+              {postUser.email}
+            </Typography>
+          )}
           <Typography
             variant="body2"
             color="textSecondary"

@@ -6,7 +6,9 @@ const postResolvers = {
     // Get all posts
     getPosts: async () => {
       try {
-        return await Post.find().sort({ dateCreated: -1 });
+        return await Post.find()
+          .populate("user", "email")
+          .sort({ dateCreated: -1 }); // Add the populate() call
       } catch (err) {
         throw new Error(err.message);
       }
@@ -15,7 +17,7 @@ const postResolvers = {
     // Get a specific post by postId
     getPost: async (_, { postId }) => {
       try {
-        return await Post.findById(postId);
+        return await Post.findById(postId).populate("user", "email"); // Add the populate() call
       } catch (err) {
         throw new Error(err.message);
       }
@@ -26,7 +28,10 @@ const postResolvers = {
     createPost: async (_, { title, content, imageUrl }, context) => {
       // Verify that the user is authenticated
       const user = authUser(context);
+<<<<<<< HEAD
+=======
     
+>>>>>>> 5ce571c0133feaa798e0d634cf3419e8ed3cd87f
 
       // Create a new post
       const newPost = new Post({
@@ -47,11 +52,11 @@ const postResolvers = {
     deletePost: async (_, { postId }, context) => {
       // Verify that the user is authenticated
       const user = authUser(context);
-      
+
       try {
         // Find the post in the database
         const post = await Post.findById(postId);
-        
+
         // Check that the user is the author of the post
         if (post.username === user.username) {
           // Delete the post
@@ -69,15 +74,19 @@ const postResolvers = {
     updatePost: async (_, { postId, content }, context) => {
       // Verify that the user is authenticated
       const user = authUser(context);
-      
+
       try {
         // Find the post in the database
         const post = await Post.findById(postId);
-        
+
         // Check that the user is the author of the post
         if (post.username === user.username) {
           // Update the post and return the updated post object
-          return await Post.findByIdAndUpdate(postId, { content }, { new: true });
+          return await Post.findByIdAndUpdate(
+            postId,
+            { content },
+            { new: true }
+          );
         } else {
           throw new Error("Access denied");
         }
@@ -95,4 +104,3 @@ const postResolvers = {
 };
 
 export default postResolvers;
-

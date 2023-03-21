@@ -12,7 +12,8 @@ const PostSchema = gql`
     postLikes: [PostLike]!
     postLikeCount: Int!
     comments: [Comment]!
-    commentCount: Int
+    commentCount: Int!
+    user: User!
   }
 
   # Define the available queries for Post type
@@ -30,4 +31,3 @@ const PostSchema = gql`
 `;
 
 export default PostSchema;
-
