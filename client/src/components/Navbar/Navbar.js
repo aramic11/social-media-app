@@ -24,6 +24,10 @@ const MenuAppBar = () => {
               {context.user.username}
             </Typography>
 
+            <Button color="inherit" component={Link} to="/chat">
+              Chat
+            </Button>
+
             <Button color="inherit" component={Link} to="/post">
               Post
             </Button>
