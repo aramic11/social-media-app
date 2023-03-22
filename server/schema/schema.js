@@ -9,6 +9,8 @@ import UserSchema from "./User.js";
 import MessageSchema from "./Message.js";
 
 
+import ProfileSchema from "./Profile.js";
+
 // Define the root Query and Mutation types, which are required by Apollo Server
 const typeDefs = gql`
   type Query {
@@ -25,6 +27,7 @@ const typeDefs = gql`
   ${PostSchema}
   ${UserSchema} 
   ${MessageSchema}
+  ${ProfileSchema}
 `;
 
 export default typeDefs;
