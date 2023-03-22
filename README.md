@@ -58,5 +58,8 @@ This was a collaboration between the following developers:
 ## Link to Deployed Site
 
 ## Screenshots
+![Screen Shot 2023-03-21 at 7 54 16 PM](https://user-images.githubusercontent.com/113262558/226767867-7523d582-daf2-4cc7-a8bf-2d360821e7ab.png)
+![Screen Shot 2023-03-21 at 7 55 00 PM](https://user-images.githubusercontent.com/113262558/226767876-9859859a-aa8b-44f6-a2a5-88b689d7d303.png)
+
 
 
