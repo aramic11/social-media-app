@@ -4,7 +4,9 @@ import likeResolvers from "./Like.js";
 import messageResolvers from "./Message.js";
 import postResolvers from "./Post.js";
 import userResolvers from "./User.js";
-import profileResolvers from "./Profile";
+import profileResolvers from "./Profile.js";
+
+
 const Resolvers = {
   Query: {
     ...postResolvers.Query,

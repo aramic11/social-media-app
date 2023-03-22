@@ -1,7 +1,5 @@
-import { useQuery, useMutation } from '@apollo/client';
-import { useParams } from 'react-router-dom';
-import React, { useState } from 'react';
-import { GET_USER, FOLLOW_USER, UNFOLLOW_USER, UPLOAD_PROFILE_IMAGE } from '../../client/src/pages/Profile/Profile';
+import Profile from "../models/Profile.js";
+import { authUser } from "../utils/auth.js";
 
 const ProfileResolver = {
     Query: {
@@ -38,6 +36,6 @@ const ProfileResolver = {
     },
   };
   
-  module.exports = ProfileResolver;
+  export default ProfileResolver;
   
   

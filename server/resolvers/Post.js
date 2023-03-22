@@ -27,6 +27,7 @@ const postResolvers = {
       // Verify that the user is authenticated
       const user = authUser(context);
     
+      console.log('createPost > user: ', JSON.stringify(user, null, 2));
 
       // Create a new post
       const newPost = new Post({
