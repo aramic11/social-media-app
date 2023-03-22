@@ -7,6 +7,7 @@ import userResolvers from "./User.js";
 import profileResolvers from "./Profile.js";
 
 
+
 const Resolvers = {
   Query: {
     ...postResolvers.Query,
@@ -21,7 +22,9 @@ const Resolvers = {
     ...postResolvers.Mutation,
     ...userResolvers.Mutation,
     ...messageResolvers.Mutation,
+
     ...profileResolvers.Mutation,
+
   },
   Comment: {
     ...commentResolvers.Comment,
@@ -35,6 +38,7 @@ const Resolvers = {
   Message: {
     ...messageResolvers.Message,
   },
+
   Profile: {
     ...profileResolvers.Profile
   }
